@@ -3,7 +3,12 @@ import { gql, graphql } from 'react-apollo';
 
 const User = props => {
   const { data } = props;
-  const { loading, user } = data;
+  const { loading, error, user } = data;
+
+  if (error) {
+    console.error(error);
+    return <p>error</p>;
+  }
 
   if (loading) {
     return null;
