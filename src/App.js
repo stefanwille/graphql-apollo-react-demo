@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ApolloProvider } from 'react-apollo';
 import styled from 'styled-components';
 import User from './User';
+import AnotherUser from './AnotherUser';
 import apolloClient from './apolloClient';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
           <User />
+          <AnotherUser />
         </div>
       </ApolloProvider>
     );
