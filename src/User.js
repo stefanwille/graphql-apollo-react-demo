@@ -11,7 +11,7 @@ const User = props => {
 
   return (
     <div>
-      {user.firstName} {user.lastName}
+      User: {user.firstName} {user.lastName}
     </div>
   );
 };
