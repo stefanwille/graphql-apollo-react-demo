@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import { ApolloProvider } from 'react-apollo';
-import styled from 'styled-components';
-import User from './User';
-import AnotherUser from './AnotherUser';
-import apolloClient from './apolloClient';
+import React, { Component } from "react";
+import { ApolloProvider } from "react-apollo";
+import styled from "styled-components";
+import User from "./User";
+import AnotherUser from "./AnotherUser";
+import MutationButton from "./MutationButton";
+import apolloClient from "./apolloClient";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           </p>
           <User />
           <AnotherUser />
+          <MutationButton />
         </div>
       </ApolloProvider>
     );
